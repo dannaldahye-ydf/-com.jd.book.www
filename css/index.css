@@ -138,3 +138,37 @@ float: left;
     font-size: 30px;
     cursor: pointer;
 }
+/* 搜索栏 */
+.search{
+    width: 100%;
+}
+.search-book{
+    position: relative;
+    margin-left: 45px;
+}
+.search-book b{
+    font-size: 18px;
+    color: #666666;
+    font-weight: normal;
+    margin: 0 10px;
+}
+.search-book>a{
+    display: inline-block;
+    width: 75px;
+    height: 21px;
+    border: 1px solid #ccc;
+    line-height: 21px;
+}
+.search-book-xiala{
+    display: none;
+    position: absolute;
+    width: 176px;
+    height: 460px;
+    border: 1px solid #ccc;
+    top: 19px;
+    left: 0;
+}
+.search-book-xiala p{
+    line-height: 2;
+    padding-left: 10px;
+}
