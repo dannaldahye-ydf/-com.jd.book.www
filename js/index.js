@@ -108,3 +108,23 @@ $(function () {
 
     });
 })
+
+//tab切换
+$('.aa-tuijian-jingxuan span').mouseenter(function(){
+    let index=$('.aa-tuijian-jingxuan span').index($(this))
+    $('.jingxuan-content li').each(function(){
+        $('.jingxuan-content>li').css("display","none")
+    })
+    $('.jingxuan-content>li').eq(index).css("display","block")
+    $('.aa-tuijian-jingxuan span').removeClass('active')
+     $(this).addClass("active")
+})
+$('.aa-tuijian-xinshu span').mouseenter(function(){
+    let index=$('.aa-tuijian-xinshu span').index($(this))
+    $('.xinshu-content li').each(function(){
+        $('.xinshu-content>li').css("display","none")
+    })
+    $('.xinshu-content>li').eq(index).css("display","block")
+    $('.aa-tuijian-xinshu span').removeClass('active')
+     $(this).addClass("active")
+})
