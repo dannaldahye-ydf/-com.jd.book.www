@@ -128,3 +128,7 @@ $('.aa-tuijian-xinshu span').mouseenter(function(){
     $('.aa-tuijian-xinshu span').removeClass('active')
      $(this).addClass("active")
 })
+// 手风琴
+$(".box ul li").hover(function(){
+    $(this).addClass('on').siblings().removeClass('on');
+});
