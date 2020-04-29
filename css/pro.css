@@ -126,3 +126,308 @@ float: left;
 .my-jd-top{
     border-bottom: 1px solid #eee;
 }
+
+/* 搜索框 */
+.search {
+    width: 100%;
+    height: 95px;
+    padding: 30px 0;
+}
+
+.search-input {
+    position: relative;
+    display: inline-block;
+    margin-left: 244px;
+    width: 582px;
+    height: 36px;
+    border: 2px solid #f30213;
+}
+
+.search-input input {
+    float: left;
+    height: 32px;
+    border: none;
+    width: 200px;
+    margin-left: 10px;
+}
+.search-input button{
+    width: 79px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: #f30213;
+    font-size: 16px;
+    color: #ffffff;
+}
+.shopping-cart{
+    float: right;
+    width: 140px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-right: 30px;
+    line-height: 36px;
+    color: #f30213;
+    text-align: center;
+}
+/* 分类导航 */
+.classification-nav{
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #f30213;
+}
+.classification-nav span{
+    display: inline-block;
+    width: 192px;
+    height: 40px;
+    background-color: #f30213;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+.classification-nav a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.classification-nav a:hover{
+    color: #f30213;
+}
+.classification-nav a:nth-child(5),
+.classification-nav a:nth-child(8){
+    border-right: 1px solid #eee;
+}
+/* 主体部分 */
+main{
+    width: 100%;
+    height: 5000px;
+    background-color: #18110b;
+}
+.main-img{
+    width: 100%;
+}
+.main-img img{
+    width: 100%;
+}
+/* .main-content-1{
+    width: 100%;
+    }
+
+    .main-content-1 .title {
+        width: 100%;
+    }
+
+    */ .main-content-1 .tittle img {
+        width: 100%;
+    }
+
+    .main-content-1-lists {
+        width: 100%;
+    }
+
+    .main-content-1-lists .content-list {
+    position: relative;
+        float: left;
+        width: 188px;
+        height: 275px;
+        background-color: #ffffff;
+        margin-right: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .main-content-1-lists .content-list img {
+        width: 132px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .main-content-1-lists .content-list p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        padding: 0 18px;
+    }
+    .main-content-1-lists .content-list b{
+        font-size: 16px;
+        color: #f30213;
+        margin-left: 22px;
+        line-height: 3;
+    }
+    .shudanguan{
+        width: 100%;
+    }
+    .shudanguan img{
+        width: 100%;
+    }
+    /* 底部 */
+    footer{
+        width: 100%;
+        height: 535px;
+        background-color: #eaeaea;
+    }
+    .slogen{
+        width: 100%;
+        height: 102px;
+        border-bottom: 1px solid #dedede;
+    }
+    .slogen li {
+        position: relative;
+        width: 21%;
+        height: 102px;
+        line-height: 100px;
+        float: left;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 40px;
+    }
+
+    .slogen .item-1::before {
+        position: absolute;
+        bottom: 32px;
+        left: -43px;
+        display: inline-block;
+        content: "";
+        width: 36px;
+        height: 41px;
+        background-image: url(../images/ico_service.png);
+        background-position: 0 0;
+    }
+    .slogen .item-2::before {
+        position: absolute;
+        bottom: 32px;
+        left: -43px;
+        display: inline-block;
+        content: "";
+        width: 36px;
+        height: 41px;
+        background-image: url(../images/ico_service.png);
+        background-position: 0 42px;
+    }
+    .slogen .item-3::before {
+        position: absolute;
+        bottom: 32px;
+        left: -43px;
+        display: inline-block;
+        content: "";
+        width: 36px;
+        height: 41px;
+        background-image: url(../images/ico_service.png);
+        background-position: 0 84px;
+    }
+    .slogen .item-4::before {
+        position: absolute;
+        bottom: 32px;
+        left: -43px;
+        display: inline-block;
+        content: "";
+        width: 36px;
+        height: 41px;
+        background-image: url(../images/ico_service.png);
+        background-position: 0 128px;
+    }
+    /* 帮助中心 */
+    .servise{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    dl{
+        width: 290px;
+        height: 197px;
+        float: left;
+    }
+    dl:last-child{
+        position: absolute;
+        top: 0;
+        right: -221px;
+    }
+    dt{
+        font-size: 14px;
+        line-height: 2.5;
+        margin-top: 10px;
+        font-weight: 700;
+        color: #777777;
+    }
+    dd{
+        line-height: 1.5;
+        color: #666666;
+    }
+    /* 结束部分 */
+.end {
+    width: 100%;
+}
+
+.end h3 {
+    margin: 20px 0;
+}
+
+.end h3 a {
+    color: #666666;
+    margin: 10px 10px;
+}
+
+.end p {
+    text-align: center;
+    margin: 8px 0;
+    color: #999999;
+}
+
+.end p a {
+    color: #999999;
+}
+
+.end p a:hover {
+    color: red;
+}
+
+.license {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.license i{
+    display: inline-block;
+}
+
+.license .list-1 {
+    width: 103px;
+    height: 33px;
+    background-image: url(../images/ico_footer.png);
+   background-position: 0 0;
+
+}
+.license .list-2 {
+    width: 103px;
+    height: 33px;
+    background-image: url(../images/ico_footer.png);
+   background-position: 103px 0;
+}
+.license .list-3 {
+    width: 103px;
+    height: 33px;
+    background-image: url(../images/ico_footer.png);
+   background-position: 0 33px;
+}
+.license .list-4 {
+    width: 103px;
+    height: 33px;
+    background-image: url(../images/ico_footer.png);
+   background-position: 103px 33px;
+}
+.license .list-5 {
+    width: 103px;
+    height: 33px;
+    background-image: url(../images/ico_footer.png);
+   background-position: 103px 64px;
+}

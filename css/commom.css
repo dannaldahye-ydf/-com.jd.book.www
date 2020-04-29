@@ -6,4 +6,7 @@
 }
 .container-1{
     width: 990px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
