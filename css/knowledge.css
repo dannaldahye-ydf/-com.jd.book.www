@@ -218,16 +218,24 @@ margin-right: 10px;
 .guanjianzi a:hover{
     color: red;
 }
-/* 轮播图部分 */
-.carousel{
+/* 轮播图标题 */
+.carousel-content-tittle{
     width: 100%;
+    height: 33px;
+
+    /* background-color: antiquewhite; */
+    line-height: 35px;
 }
-.carousel-left{
+.carousel-content-tittle a{
+    margin: 0 22px;
+    font-size: 14px;
+}
+.carousel-content-tittle a:hover{
+    color: red;
+}
+.carousel-content-tittle h2{
+    float: left;
     width: 210px;
-    height: 473px;
-}
-.carousel-left h2{
-    width: 100%;
     height: 33px;
     background-color: #6059cb;
     line-height: 33px;
@@ -236,16 +244,159 @@ margin-right: 10px;
     font-size: 14px;
     box-sizing: border-box;
 }
-.carousel-left-content{
+/* 轮播图部分 */
+.carousel{
     width: 100%;
+    height: 450px;
 }
-.carousel-left-content li{
+.carousel-left{
+    float: left;
+    width: 210px;
+    height: 473px;
+}
+
+.carousel-left-content{
+    
+    width: 100%;
+    position: relative;
+}
+.carousel-left-content>li{
+    
     width: 100%;
     height: 110px;
     background-color: #262254;
     border-bottom: 1px dashed #514f74;
     color: #ffffff;
+    padding: 20px 10px;
+    box-sizing: border-box;
 }
-.carousel-left-content li>a{
+.carousel-left-content>li>a{
  color: #ffffff;
+ /* padding-left: 10px; */
+ line-height: 2;
 }
+.carousel-left-content li h3{
+     padding-bottom: 20px;
+}
+/* 左边内容的下拉列表 */
+.carousel-left-content-hide{
+    display: none;
+    position: absolute;
+    width: 445px;
+    height: 440px;
+    top: 1px;
+    right: -446px;
+    z-index: 100;
+}
+.carousel-left-content-hide .left{
+    float: left;
+width: 240px;
+height: 100%;
+background-color: #ffffff;
+opacity: 0.8;
+}
+.carousel-left-content-hide .left li{
+    width: 242px;
+    height: 74px;
+    margin-top: 50px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.carousel-left-content-hide .left h3{
+    color: #9999ae;
+}
+.carousel-left-content-hide a{
+    color: #947db4;
+}
+.carousel-left-content-hide .right{
+    float: right;
+    width: 205px;
+    height: 440px;
+    background-color: #ffffff;
+}
+.carousel-left-content-hide .right img{
+    width: 92%;
+}
+.carousel-content{
+    /* float: left; */
+    display: inline-block;
+    width:calc(1210px - 210px);
+}
+
+/* 轮播图 */
+.fenlei-center{
+    width: 734px;
+    margin: 0;
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+    }
+    .fenlei-center img{
+        width: 100%;
+    }
+    .fenlei-center-tittle{
+        width: 100%;
+        font-size: 12px;
+        padding: 16px 0;
+        border: 1px solid #ccc;
+    }
+    .fenlei-center-tittle a{
+        padding: 0 18px;
+        border-right: 1px solid #ccc;
+    }
+    .fenlei-center-lunbo{
+        position: relative;
+        width: 990px;
+        overflow: hidden;
+    }
+    .slider{ 
+    }
+    .slider li{
+        width: 990px;
+        float: left;
+    }
+    .slider li img{
+        width: 100%;
+    }
+    .odiv_nav{
+        position: absolute;
+        bottom: 12px;
+        left: 210px;
+    }
+    .span_list{
+        width: 133px;
+       height: 30px;
+        float: left;
+        cursor: pointer;
+        background-color: #4642a3;
+        color: #ffffff;
+        line-height: 30px;
+        margin-left: 8px;
+    }
+    .left_click{
+        position: absolute;
+        width: 26px;
+        height: 42px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        line-height: 42px;
+        cursor: pointer;
+        z-index: 1000;
+        top: 150px;
+        background-color: rgba(0,0, 0, 0.5);
+    }
+    .right_click{
+        position: absolute;
+        right: 0px;
+        width: 26px;
+        height: 42px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        line-height: 42px;
+        cursor: pointer;
+        z-index: 1000;
+        top: 150px;
+        background-color: rgba(0,0, 0, 0.5);
+    }
