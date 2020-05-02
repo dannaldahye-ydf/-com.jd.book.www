@@ -22,10 +22,10 @@ $('.search-book-xiala').mouseleave(function () {
 })
 
 // 下拉
-$('.carousel-left-content>li').hover(function(){
-    $(this).find(".carousel-left-content-hide").css("display","block")
-},function(){
-    $(this).find(".carousel-left-content-hide").css("display","none")
+$('.carousel-left-content>li').hover(function () {
+    $(this).find(".carousel-left-content-hide").css("display", "block")
+}, function () {
+    $(this).find(".carousel-left-content-hide").css("display", "none")
 })
 
 //轮播图
@@ -39,56 +39,74 @@ $(function () {
             $(".span_list").css("backgroundColor", "#4642a3")
             $(".span_list").eq(num).css("backgroundColor", "#6059cb")
             $(".slider").stop().animate({ "marginLeft": -990 * num + "px" })
-            if(num==2){
-                $('.carousel').css("backgroundColor","#2163af")
+            if (num == 2) {
+                $('.carousel').css("backgroundColor", "#2163af")
             }
-            else{
-                $('.carousel').css("backgroundColor","#fff")
+            else {
+                $('.carousel').css("backgroundColor", "#fff")
             }
         })
     })
-      //点击左右键
-   $(".right_click").click(function(){
-        if(num<7){num++}
-        if(num>=7){
-            num=0
-            $(".slider").css("margin-left","0px")
+    //点击左右键
+    $(".right_click").click(function () {
+        if (num < 7) { num++ }
+        if (num >= 7) {
+            num = 0
+            $(".slider").css("margin-left", "0px")
         }
-        if(num==7){
-            $(".span_list").css("backgroundColor","#4642a3")
-            $(".span_list").eq(0).css("backgroundColor","#6059cb")
+        if (num == 7) {
+            $(".span_list").css("backgroundColor", "#4642a3")
+            $(".span_list").eq(0).css("backgroundColor", "#6059cb")
         }
-        else{
-            $(".span_list").css("backgroundColor","#4642a3")
-            $(".span_list").eq(num).css("backgroundColor","#6059cb")
+        else {
+            $(".span_list").css("backgroundColor", "#4642a3")
+            $(".span_list").eq(num).css("backgroundColor", "#6059cb")
         }
-        $(".slider").stop().animate({"marginLeft":-990*num+"px"})
-        if(num==2){
-            $('.carousel').css("backgroundColor","#2163af")
+        $(".slider").stop().animate({ "marginLeft": -990 * num + "px" })
+        if (num == 2) {
+            $('.carousel').css("backgroundColor", "#2163af")
         }
-        else{
-            $('.carousel').css("backgroundColor","#fff")
+        else {
+            $('.carousel').css("backgroundColor", "#fff")
         }
     })
 
-    $(".left_click").click(function(){
-        if(num>0){num--}
-        if(num<=0){
-            num=7
-            $(".slider").css("margin-left","-4950px")
-            $(".span_list").css("backgroundColor","#4642a3");
-            $(".span_list").eq(6).css("backgroundColor","#6059cb");
+    $(".left_click").click(function () {
+        if (num > 0) { num-- }
+        if (num <= 0) {
+            num = 7
+            $(".slider").css("margin-left", "-4950px")
+            $(".span_list").css("backgroundColor", "#4642a3");
+            $(".span_list").eq(6).css("backgroundColor", "#6059cb");
         }
-        else{
-            $(".span_list").css("backgroundColor","#4642a3");
-            $(".span_list").eq(num).css("backgroundColor","#6059cb");
+        else {
+            $(".span_list").css("backgroundColor", "#4642a3");
+            $(".span_list").eq(num).css("backgroundColor", "#6059cb");
         }
-        $(".slider").stop().animate({"marginLeft":-990*num+"px"});
-        if(num==2){
-            $('.carousel').css("backgroundColor","#2163af")
+        $(".slider").stop().animate({ "marginLeft": -990 * num + "px" });
+        if (num == 2) {
+            $('.carousel').css("backgroundColor", "#2163af")
         }
-        else{
-            $('.carousel').css("backgroundColor","#fff")
+        else {
+            $('.carousel').css("backgroundColor", "#fff")
         }
     })
+})
+// 移入显示箭头
+$('.jingxuan').hover(function () {
+    $('.jingxuan span').css("display", "block")
+}, function () {
+    $('.jingxuan span').css("display", "none")
+})
+// 
+$('.tuijian').hover(function () {
+    $('.tuijian span').css("display", "block")
+}, function () {
+    $('.tuijian span').css("display", "none")
+})
+// 店铺推荐
+$('.dianpu li').hover(function(){
+  $(this).css("border","8px solid #ccc")
+},function(){
+    $(this).css("border","none")
 })
