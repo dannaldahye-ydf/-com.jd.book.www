@@ -106,7 +106,10 @@ $('.tuijian').hover(function () {
 })
 // 店铺推荐
 $('.dianpu li').hover(function(){
-  $(this).css("border","8px solid #ccc")
+  $(this).css({
+    "border":"8px solid #ccc",
+    "boxSizing":"borderBox"
+  })
 },function(){
     $(this).css("border","none")
 })
